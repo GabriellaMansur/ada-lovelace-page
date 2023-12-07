@@ -1,51 +1,197 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta charset="utf-8">
-    <meta name="keywords" content="Ada Lovelace">
-    <meta name="description" content="">
-    <title>Ada Lovelace by WoMakersCode</title>
-    <link rel="stylesheet" href="css/base.css">
-    <link rel="stylesheet" href="css/theme.css">
-
-    <link id="u-theme-google-font" rel="stylesheet"
-        href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Text font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <!-- Icons Font -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"
+    />
+    <title>Ada Lovelace</title>
 </head>
+<body>
+    <header id="header">
+        <div class="logo">
+            <p>ADA</p>
+        </div>
+        <div class="menu">
+            <nav class="nav">
+                <a href="#">HOME</a>
+                <a href="https://brasil.un.org/pt-br/sdgs"
+                target='_blank' 
+                rel='noreferrer' ></a>
+                <a href="/contact">CONTATO</a>
+            </nav>
+        </div>
 
-<body class="u-body u-xl-mode">
-    <section class="u-clearfix u-palette-2-base u-section-1">
-        <div class="u-expanded-width u-grey-5 u-shape u-shape-rectangle u-shape-1"></div>
-        <img class="u-image u-image-circle u-preserve-proportions u-image-1" src="img/ada-lovelace-illustration.png"
-            title="Ilustração de Ada Lovelace com uma camiseta da WoMakersCode" />
-        <div class="u-container-align-left u-container-style u-group u-radius-50 u-shape-round u-white u-group-1">
-            <div class="u-container-layout u-valign-middle u-container-layout-1">
-                <h2 class="u-align-left u-text u-text-1">A WoMakersCode segue o legado de Ada Lovelace</h2>
-                <p class="u-align-left u-text u-text-black u-text-2">Nossa missão é inspirar e empoderar mulheres na
-                    tecnologia, oferecendo cursos, mentorias, eventos e apoio a empregabilidade.
-                </p>
-                <a href="https://womakerscode.org/"
-                    class="u-active-palette-2-light-1 u-border-none u-btn u-btn-round u-button-style u-hover-palette-2-light-1 u-palette-2-base u-radius-50 u-text-active-white u-text-body-alt-color u-text-hover-white u-btn-2">Saiba mais</a>
+        <button onclick="animationMenu()" id="btn-menu">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+
+        </button>
+
+        <div class="menu-mobile" id="menu-mobile">
+            <nav class="nav">
+                <a href="/initial-section">HOME</a>
+                <a href="https://brasil.un.org/pt-br/sdgs"  
+                target='_blank' 
+                rel='noreferrer' >ONU</a>
+                <a href="/footer">CONTATO</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="initial-section">
+            <div class="title">
+                <h1 id="text">ADA LOVELACE</h1>
+                <p>Matemática e escritora britânica do século XIX.considerada a primeira programadora da história devido às suas visões inovadoras sobre o potencial da máquina analítica de Charles Babbage.</p>
+            </div>
+        </section>
+
+        <section class="infographic">
+
+            <div class="container">
+            
+                <div class="right-side">
+                    <h1>Sua história</h1>
+                    <p>
+                        Ada Lovelace é frequentemente considerada a primeira programadora da história devido às suas visões inovadoras sobre o potencial da máquina analítica de Charles Babbage. Sua contribuição mais significativa foi a elaboração de notas adicionadas à tradução do artigo de Luigi Federico Menabrea sobre a máquina analítica.</p>
+                        <p>
+                            Ela desenvolveu um algoritmo destinado a ser processado pela máquina analítica para calcular os números de Bernoulli. Este é considerado o primeiro algoritmo destinado à implementação em uma máquina, tornando Ada Lovelace a primeira programadora na história da computação. 
+                        </p>
+                    
+                </div>
+                <div class="left-side">
+                    <img src="img/ada2.png" alt="">
+                </div>
+        </div>
+    </section>
+    <section class="wrapper">
+        <h1>Informações e curiosidades</h1>
+        <div class="carousel">
+            <div class="carousel-item">
+                <div class="carousel-content">
+                    <h2>A Primeira Programadora</h2>
+                    <p>Ada Lovelace é reconhecida como a primeira programadora da história. Desenvolveu o primeiro algoritmo destinado à implementação em uma máquina, para a máquina analítica de Charles Babbage
+                        Percebeu que a máquina analítica poderia processar além de simples cálculos matemáticos, antecipando a ideia de programação de propósito geral..</p>
+                </div>
+                <button class="read-more">Leia mais</button>
+            </div>
+            <div class="carousel-item">
+                <div class="carousel-content">
+                    <h2>Algoritmo dos Números de Bernoulli</h2>
+                    <p>Criou um algoritmo para a máquina analítica que calculava os números de Bernoulli. Este algoritmo é considerado o primeiro destinado à execução em uma máquina, estabelecendo as bases para a programação de computadores.</p>
+                </div>
+                <button class="read-more">Leia mais</button>
+            </div>
+            
+            <div class="carousel-item">
+                <div class="carousel-content">
+                    <h2>Visão Ampliada da Programação</h2>
+                    <p>Lovelace via a programação como uma atividade criativa e imaginativa, não limitada apenas a operações matemáticas. Acreditava que a máquina analítica poderia ser programada para criar música, arte e realizar tarefas gerais, concebendo uma visão abrangente da programação.
+                        Sua compreensão do potencial das máquinas influenciou o desenvolvimento subsequente da ciência da computação.</p>
+                </div>
+                <button class="read-more">Leia mais</button>
+            </div>
+
+            <div class="carousel-item">
+                <div class="carousel-content">
+                    <h2>Legado e Reconhecimento</h2>
+                    <p>A linguagem de programação Ada, desenvolvida para a Departamento de Defesa dos EUA, é nomeada em homenagem a Ada Lovelace. Ada Lovelace é um ícone que continua a inspirar mulheres e homens na área da tecnologia, destacando a importância da diversidade no campo da programação.
+                   </p>
+                </div>
+                <button class="read-more">Leia mais</button>
             </div>
         </div>
     </section>
+    <section class="biography">
+        <h2>Breve biografia</h2>
+            <img  id="biography-img"  src="img/imagem2.jpg" alt="">
+        
+        <div class="biography-content">
 
-    <section class="u-backlink u-clearfix">
-        <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+            <div class="biography-text">
+                    <p>
+                        Ada Lovelace, nascida Augusta Ada Byron em 10 de dezembro de 1815, é amplamente reconhecida como a primeira programadora da história. Ada Lovelace era filha do famoso poeta britânico Lord Byron e de Anne Isabella Milbanke. Seus pais se separaram quando ela era muito jovem, e sua mãe, preocupada com a possível influência poética de seu pai sobre Ada, incentivou seu interesse em matemática e ciência. <br>
 
-            <p class="u-align-left u-text u-text-2"> Ada Lovelace foi uma mulher extraordinária que desafiou os limites
-                da sua época. Ela combinou a paixão
-                pela poesia com a genialidade da matemática, e criou a linguagem dos computadores. Ela colaborou com
-                Charles Babbage, um visionário que projetou a primeira máquina capaz de processar dados. Ada Lovelace
-                imaginou que os computadores poderiam fazer mais do que apenas cálculos numéricos. Ela previu que eles
-                poderiam criar música, arte e ciência. Ela foi a primeira a entender o potencial da tecnologia para
-                transformar o mundo. Ela foi uma pioneira, uma inovadora e uma inspiração para as mulheres na
-                tecnologia. Ela viveu apenas 36 anos, mas deixou um legado que dura até hoje.</p>
+                        Ada Lovelace foi educada em matemática e ciências, o que era incomum para mulheres na época. Seu tutor foi o matemático e cientista Mary Somerville, que desempenhou um papel significativo em sua educação. Ada casou-se com William King, o Conde de Lovelace, em 1835, tornando-se a Condessa de Lovelace. <br>
+                        
+                        O trabalho mais famoso de Ada Lovelace é a colaboração com Charles Babbage, um matemático e inventor, em sua máquina analítica, uma precursora teórica dos computadores modernos. Durante seu trabalho, Lovelace traduziu um artigo escrito pelo matemático italiano Luigi Federico Menabrea sobre a máquina analítica. <br> No entanto, sua contribuição mais significativa foi a adição de extensos comentários e notas ao artigo, que incluíam um algoritmo para a máquina analítica que é considerado o primeiro programa de computador.
+                        
+                        Ada Lovelace percebeu que a máquina analítica não era apenas uma ferramenta para cálculos matemáticos, mas também poderia manipular símbolos e informações de qualquer natureza, tornando-a uma máquina de propósito geral. Ela previu que a máquina poderia ser usada para além de cálculos matemáticos, influenciando o desenvolvimento futuro dos computadores.
+                    </p>
+                </div>
         </div>
-
     </section>
+    <aside id="video-aside">
+        <h3>Quer aprender mais?</h3>
+        <p>Confira um vídeo detalhando a vida e o trabalho de Ada Lovelace
+        </p>
+        <div class="video"><iframe width="560" height="315" src="https://www.youtube.com/embed/IZptxisyVqQ?si=Ar5PBjpg0AedPrky" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+    </aside>
+    
+    
+    </main>
+    <footer>
+        <div class="myInformation">
+            <div class="credits">
+               <h3>Créditos</h3>
+                    <a 
+                    target='_blank' 
+                    rel='noreferrer' 
+                    href="https://museucatavento.org.br/mulheres-na-ciencia/ada-lovelace/FOLDER.pdf">Museu Catavento
+                    </a>
 
+                    <a 
+                    target='_blank' 
+                    rel='noreferrer' 
+                    href="https://br.freepik.com/">Freepik
+                    </a>
+
+                    <a 
+                    target='_blank' 
+                    rel='noreferrer' 
+                    href="https://revistagalileu.globo.com/Sociedade/Curiosidade/noticia/2018/02/10-fatos-sobre-ada-lovelace-que-farao-voce-admira-la-ainda-mais.html">Revista Galileu
+                    </a>
+               
+
+            </div>
+
+            <div class="contact">
+                <h3>Contato</h3>
+                <a 
+                target='_blank' 
+                rel='noreferrer' 
+                href='https://www.linkedin.com/in/gabriella-m-mansur-mesquita/'>LinkedIn
+                
+              </a>
+              <a 
+                target='_blank' 
+                rel='noreferrer' 
+                href='https://github.com/GabriellaMansur'>GitHub
+  
+              </a> 
+            </div>
+        </div>
+        <div class="email">
+            <p>Gabriella Mansur</p>
+            <p>gabriellamansur314@gmail.com</p>
+        </div>
+    </footer>
+        
+
+            <div id="btn-top">
+                <i class="arrow up"></i> 
+            </div>
+
+       <script src="js/script.js"></script>
 </body>
-
 </html>
